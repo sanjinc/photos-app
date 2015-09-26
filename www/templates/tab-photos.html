@@ -1,2 +1,11 @@
 <ion-view view-title="My Photos">
+  <ion-content class="padding">
+
+    <div class="list card" ng-repeat="photo in photos.photos">
+      <div class="item item-image">
+        <img ng-src="{{photo.image_url}}">
+      </div>
+    </div>
+
+  </ion-content>
 </ion-view>
